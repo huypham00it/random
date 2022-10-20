@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button id="party" class="btn btn-animation">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span>Random</span>
+      </button>
+      <div id="popup" class="popup hide">
+        <img src="./popup.png" alt="" />
+        <div class="loader" id="loader">
+          <div class="inner one"></div>
+          <div class="inner two"></div>
+          <div class="inner three"></div>
+        </div>
+        <figure class="swing">
+          <img src="" alt="" id="image" class="hide" />
+        </figure>
+        <h1 id="award"></h1>
+      </div>
+      <div id="tsparticles" style="position: absolute; z-index: 9999"></div>
+    </div>
+    <audio autoplay loop controls>
+      <source src="audio.mp3" type="audio/mpeg" />
+    </audio>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.24.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-shape-confetti@1.9.1"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
